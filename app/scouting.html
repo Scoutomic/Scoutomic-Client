@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Scoutomic</title>
+
+    <link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="components/flat-ui/dist/css/flat-ui.min.css" rel="stylesheet" type="text/css">
+
+    <script src="helpers/context_menu.js"></script>
+    <script src="helpers/external_links.js"></script>
+
+    <script src="app.js"></script>
+</head>
+<body>
+<div class="container">
+    <form role="form">
+  <h3>Scouting Form (2016) v1.0.2</h4>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>Match Information</h4>
+          <div id="stage_container" class="form-group">
+            <label class="col-sm-2 control-label" for="stage">Stage</label>
+            <div class="col-sm-10">
+                <select data-toggle="select" class="form-control select select-default" id="stage">
+                  <option selected disabled>Choose a Stage</option>
+                  <option value="0">Qualification</option>
+                  <option value="1">Quarterfinal</option>
+                  <option value="2">QF Tiebreaker</option>
+                  <option value="3">Semifinal</option>
+                  <option value="4">SF Tiebreaker</option>
+                  <option value="5">Final</option>
+                </select>
+            </div>
+          </div>
+        <div id="match_num_container" class="form-group">
+          <label class="col-sm-2 control-label" for="match_num">Match Number</label>
+          <div class="col-sm-10">
+            <input class="form-control" type="number" id="match_num">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>Team Information</h4>
+        <div id="team_num_container" class="form-group">
+          <label class="col-sm-2 control-label" for="team_num">Team Number</label>
+          <div class="col-sm-10">
+            <input class="form-control" type="number" min="0" max="99999" id="team_num">
+          </div>
+        </div>
+        <div id="stage_container" class="form-group">
+          <label class="col-sm-2 control-label" for="team_alliance">Team Alliance</label>
+          <div class="col-sm-10">
+              <select data-toggle="select" class="form-control select select-default" id="team_alliance">
+                <option selected disabled>Choose an Alliance</option>
+                <option value="0">Blue</option>
+                <option value="1">Red</option>
+              </select>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>Defenses</h4>
+        <div id="def_portcullis_container" class="form-group">
+            <h6>Portcullis</h6>
+            <div id="def_portcullis_auto_container" class="form-group">
+              <label class="col-sm-2 control-label">Autonomous</label>
+              <div class="col-sm-10">
+                <label class="radio" for="def_portcullis_auto">
+                  <input type="radio" name="def_portcullis_auto" data-toggle="radio" value="1" id="def_portcullis_auto">
+                   Yes
+                </label>
+                <label class="radio" for="def_portcullis_auto">
+                  <input type="radio" name="def_portcullis_auto" data-toggle="radio" value="0" id="def_portcullis_auto" checked>
+                   No
+                </label>
+              </div>
+          </div>
+        </div>
+        <div id="stage_container" class="form-group">
+          <label class="col-sm-2 control-label" for="team_alliance">Team Alliance</label>
+          <div class="col-sm-10">
+              <select data-toggle="select" class="form-control select select-default" id="team_alliance">
+                <option selected disabled>Choose an Alliance</option>
+                <option value="0">Blue</option>
+                <option value="1">Red</option>
+              </select>
+          </div>
+        </div>
+    </div>
+  </div>
+  </form>
+</div>
+
+<script>window.$ = window.jQuery = require('jquery');</script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="components/flat-ui/dist/js/flat-ui.min.js"></script>
+
+<script src="components/flat-ui/docs/assets/js/application.js"></script>
+
+<script src="scouting/form-manager.js"></script>
+</body>
+</html>
