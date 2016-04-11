@@ -1,4 +1,4 @@
-# ScoutingApp-Client
+# Scoutomic-Client
 
 A client interface for FRC match scouting.
 
