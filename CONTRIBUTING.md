@@ -1,4 +1,4 @@
-# Contributing to TradeOfferManager
+# Contributing to Scoutomic
 
 Thanks for your interest in making Scoutomic better! I would appreciate it if you read over this document quickly
 before you submit your issue or pull request. It'll make things go much smoother.
