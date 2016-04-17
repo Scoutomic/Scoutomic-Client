@@ -4,6 +4,7 @@
 // window from here.
 
 import { app } from 'electron';
+import os from 'os';
 import devHelper from './helpers/dev';
 import createWindow from './helpers/window';
 
@@ -13,22 +14,28 @@ import env from './env';
 
 var mainWindow;
 
+var yosemite = false;
+
 app.on('ready', function () {
-    var mainWindow = createWindow('main', {
-        width: 750,
-        height: 600,
-        frame: false
-		//Mac OS X Yosemite: titleBarStyle: 'hidden'
-    });
+	if (os.platform() === 'darwin' && os.release().split('.')[0] >= 10) {
+		yosemite = true;
+	}
 
-    mainWindow.loadURL('file://' + __dirname + '/app.html');
+	var mainWindow = createWindow('main', {
+		width: 750,
+		height: 600,
+		titleBarStyle: yosemite ? 'hidden' : undefined,
+		frame: yosemite ? true : false
+	});
 
-    if (env.name !== 'production') {
-        devHelper.setDevMenu();
-        mainWindow.openDevTools();
-    }
+	mainWindow.loadURL('file://' + __dirname + '/app.html');
+
+	if (env.name !== 'production') {
+		devHelper.setDevMenu();
+		mainWindow.openDevTools();
+	}
 });
 
 app.on('window-all-closed', function () {
-    app.quit();
+	app.quit();
 });
