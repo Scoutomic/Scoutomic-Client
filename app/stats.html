@@ -7,7 +7,10 @@
 
 	<link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="components/flat-ui/dist/css/flat-ui.min.css" rel="stylesheet" type="text/css">
+
 	<link href="components/stats.css" rel="stylesheet" type="text/css">
+	<!-- <link href="components/app.css" rel="stylesheet" type="text/css">  -->
+	<!-- linking the app.css stlysheet makes the title bar dissapear for some reason -->
 
 	<script src="helpers/context_menu.js"></script>
 	<script src="helpers/external_links.js"></script>
@@ -16,8 +19,22 @@
 </head>
 
 <body>
+	<div id="title-bar">
+		<div id="title">Scoutomic</div>
+		<div id="title-bar-btns">
+			<a href="app.html"> <button id="home-btn">&#8962;</button> </a>
+			<button id="min-btn">-</button>
+			<button id="max-btn">+</button>
+			<button id="close-btn">x</button>
+		</div>
+	</div>
 	<div id="container">
 		<canvas id="stats-canvas" height="450" width="600"></canvas>
+		<div class="column-left">
+			<a href="app.html">
+				<button class="btn btn-info">Back(just in case)</button>
+			</a>
+		</div>
 	</div>
 
 	<script>
