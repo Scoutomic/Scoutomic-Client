@@ -19,6 +19,7 @@ body
 
 #title-bar
 {
+	-webkit-user-select: none;
 	-webkit-app-region: drag;
 	position: fixed;
 	width: 100%;
