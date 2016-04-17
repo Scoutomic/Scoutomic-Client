@@ -28,7 +28,7 @@ app.on('ready', function () {
 		frame: yosemite ? true : false
 	});
 
-	mainWindow.loadURL('file://' + __dirname + '/app.html');
+	mainWindow.loadURL('file://' + __dirname + '/main.html');
 
 	if (env.name !== 'production') {
 		devHelper.setDevMenu();
