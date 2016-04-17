@@ -18,6 +18,7 @@ app.on('ready', function () {
         width: 750,
         height: 600,
         frame: false
+		//Mac OS X Yosemite: titleBarStyle: 'hidden'
     });
 
     mainWindow.loadURL('file://' + __dirname + '/app.html');
