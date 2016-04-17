@@ -14,7 +14,6 @@ import env from './env';
 var mainWindow;
 
 app.on('ready', function () {
-
     var mainWindow = createWindow('main', {
         width: 750,
         height: 600,

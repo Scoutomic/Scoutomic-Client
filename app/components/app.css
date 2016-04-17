@@ -48,7 +48,8 @@ body
 	right: 0px;
 }
 
-#title-bar-btns button {
+#title-bar-btns button
+{
 	height: 32px;
 	width: 32px;
 	background-color: transparent;
@@ -57,16 +58,19 @@ body
 	font-size: 16px;
 }
 
-#title-bar-btns button:hover {
+#title-bar-btns button:hover
+{
 	background-color: #3F3F41;
 }
 
-#content {
+#content
+{
 	padding: 12px;
 	color: #CCCCCC;
 	z-index: 0;
 }
 
-a {
+a
+{
 	color: #68217A;
 }

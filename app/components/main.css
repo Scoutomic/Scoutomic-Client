@@ -1,62 +1,62 @@
 .title
 {
-    font:900 70px/80px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing:-2px;
-    margin:10px 0;
+	font: 900 70px/80px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: -2px;
+	margin: 10px 0;
 }
 
 .headline
 {
-    text-align:center;
-    padding:12px 0 110px;
+	text-align: center;
+	padding: 12px 0 110px;
 }
 
 .title .logo
 {
-    background:url(flat-ui/img/diamond.png) center 0 no-repeat;
-    height:181px;
-    overflow:hidden;
-    text-indent:-9999em;
-    width:236px;
-    margin:0 auto 26px;
+	background: url(flat-ui/img/diamond.png) center 0 no-repeat;
+	height: 181px;
+	overflow: hidden;
+	text-indent: -9999em;
+	width: 236px;
+	margin: 0 auto 26px;
 }
 
 .title small
 {
-    display:block;
-    color: #3498db;
-    font-size:20px;
-    font-weight:700;
-    letter-spacing:0;
-    padding-top:5px;
+	display: block;
+	color: #3498db;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0;
+	padding-top: 5px;
 }
 
 .container
 {
-    text-align:center;
+	text-align: center;
 }
 
 .column-left
 {
-    float:left;
-    width:33%;
+	float: left;
+	width: 33%;
 }
 
 .column-right
 {
-    float:right;
-    width:33%;
+	float: right;
+	width: 33%;
 }
 
 .column-center
 {
-    display:inline-block;
-    width:33%;
+	display: inline-block;
+	width: 33%;
 }
 
 @media only screen and -webkit-min-device-pixel-ratio 2,only screen and -webkit-min-device-pixel-ratio 15,only screen and -moz-min-device-pixel-ratio 2,only screen and -o-min-device-pixel-ratio 32,only screen and -o-min-device-pixel-ratio 21,only screen and min--moz-device-pixel-ratio 15,only screen and min-device-pixel-ratio 15,only screen and min-device-pixel-ratio 2 {
-    .logo
-    {
-        background-image:url(../img/demo/diamond.png);
-    }
+	.logo
+	{
+		background-image: url(../img/demo/diamond.png);
+	}
 }
