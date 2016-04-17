@@ -8,6 +8,9 @@
 	<link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="components/flat-ui/dist/css/flat-ui.min.css" rel="stylesheet" type="text/css">
 
+    <link href="components/scouting.css" rel="stylesheet" type="text/css">
+    <link href="components/app.css" rel="stylesheet" type="text/css">
+
 	<script src="helpers/context_menu.js"></script>
 	<script src="helpers/external_links.js"></script>
 
@@ -15,13 +18,21 @@
 </head>
 
 <body>
+    <div id="title-bar">
+        <div id="title">Scoutomic</div>
+        <div id="title-bar-btns">
+            <button id="min-btn">-</button>
+            <button id="max-btn">+</button>
+            <button id="close-btn">x</button>
+        </div>
+    </div>
 	<div class="container">
+        <h3>Scouting Form (2016) v1.0.2</h3>
 		<form role="form">
-			<h3>Scouting Form (2016) v1.0.2</h3>
 			<div class="row">
 				<div class="col-md-12">
 					<h4>Match Information</h4>
-					<div id="stage_container" class="form-group">
+					<div id="stage_container" class="form-group scout-container">
 						<label class="col-sm-2 control-label" for="stage">Stage</label>
 						<div class="col-sm-10">
 							<select data-toggle="select" class="form-control select select-default" id="stage">
@@ -35,7 +46,7 @@
 							</select>
 						</div>
 					</div>
-					<div id="match_num_container" class="form-group">
+					<div id="match_num_container" class="form-group scout-container">
 						<label class="col-sm-2 control-label" for="match_num">Match Number</label>
 						<div class="col-sm-10">
 							<input class="form-control" type="number" id="match_num">
@@ -46,13 +57,13 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h4>Team Information</h4>
-					<div id="team_num_container" class="form-group">
+					<div id="team_num_container" class="form-group scout-container">
 						<label class="col-sm-2 control-label" for="team_num">Team Number</label>
 						<div class="col-sm-10">
 							<input class="form-control" type="number" min="0" max="99999" id="team_num">
 						</div>
 					</div>
-					<div id="stage_container" class="form-group">
+					<div id="stage_container" class="form-group scout-container">
 						<label class="col-sm-2 control-label" for="team_alliance">Team Alliance</label>
 						<div class="col-sm-10">
 							<select data-toggle="select" class="form-control select select-default" id="team_alliance">
@@ -66,33 +77,97 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<h4>Defenses</h4>
-					<div id="def_portcullis_container" class="form-group">
-						<h6>Portcullis</h6>
-						<div id="def_portcullis_auto_container" class="form-group">
-							<label class="col-sm-2 control-label">Autonomous</label>
-							<div class="col-sm-10">
-								<label class="radio" for="def_portcullis_auto">
-									<input type="radio" name="def_portcullis_auto" data-toggle="radio" value="1" id="def_portcullis_auto"> Yes
-								</label>
-								<label class="radio" for="def_portcullis_auto">
-									<input type="radio" name="def_portcullis_auto" data-toggle="radio" value="0" id="def_portcullis_auto" checked> No
-								</label>
-							</div>
+					<h4>Autonomous</h4>
+                    <div id="auto_defense_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="auto_defense">Defenses Crossed</label>
+                        <div class="col-sm-10">
+							<select data-toggle="select" multiple class="form-control multiselect multiselect-default mrs mbm" id="auto_defense">
+								<option selected disabled>Choose a Defense</option>
+								<option value="0">Portcullis</option>
+								<option value="1">Cheval de Frise</option>
+                                <option value="2">Ramparts</option>
+                                <option value="3">Moat</option>
+                                <option value="4">Drawbridge</option>
+                                <option value="5">Sally Port</option>
+                                <option value="6">Rock Wall</option>
+                                <option value="7">Rough Terrain</option>
+                                <option value="8">Low Bar</option>
+							</select>
 						</div>
 					</div>
-					<div id="stage_container" class="form-group">
-						<label class="col-sm-2 control-label" for="team_alliance">Team Alliance</label>
+					<div id="auto_speed_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="auto_speed">Defense Speed</label>
 						<div class="col-sm-10">
-							<select data-toggle="select" class="form-control select select-default" id="team_alliance">
-								<option selected disabled>Choose an Alliance</option>
-								<option value="0">Blue</option>
-								<option value="1">Red</option>
+							<select data-toggle="select" class="form-control select select-default" id="auto_speed">
+								<option selected disabled>Choose a Speed</option>
+                                <option value="0">None</option>
+								<option value="1">Slow</option>
+								<option value="2">Fast</option>
 							</select>
+						</div>
+					</div>
+                    <div id="auto_h_goals_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="auto_h_goals">High Goals</label>
+						<div class="col-sm-10">
+							<input class="form-control" type="number" min="0" max="9" id="auto_h_goals">
+						</div>
+					</div>
+                    <div id="auto_l_goals_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="shots">Low Goals</label>
+						<div class="col-sm-10">
+							<input class="form-control" type="number" min="0" max="9" id="auto_l_goals">
 						</div>
 					</div>
 				</div>
 			</div>
+            <div class="row">
+				<div class="col-md-12">
+					<h4>Teleoperated</h4>
+                    <div id="auto_defense_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="auto_defense">Defenses Crossed</label>
+						<div class="col-sm-10">
+							<select data-toggle="select" multiple class="form-control multiselect multiselect-default mrs mbm" id="auto_defense">
+								<option selected disabled>Choose a Defense</option>
+								<option value="0">Portcullis</option>
+								<option value="1">Cheval de Frise</option>
+                                <option value="2">Ramparts</option>
+                                <option value="3">Moat</option>
+                                <option value="4">Drawbridge</option>
+                                <option value="5">Sally Port</option>
+                                <option value="6">Rock Wall</option>
+                                <option value="7">Rough Terrain</option>
+                                <option value="8">Low Bar</option>
+							</select>
+						</div>
+					</div>
+					<div id="auto_speed_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="auto_speed">Defense Speed</label>
+						<div class="col-sm-10">
+							<select data-toggle="select" class="form-control select select-default" id="auto_speed">
+								<option selected disabled>Choose a Speed</option>
+                                <option value="0">None</option>
+								<option value="1">Slow</option>
+								<option value="2">Fast</option>
+							</select>
+						</div>
+					</div>
+                    <div id="auto_h_goals_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="auto_h_goals">High Goals</label>
+						<div class="col-sm-10">
+							<input class="form-control" type="number" min="0" max="9" id="auto_h_goals">
+						</div>
+					</div>
+                    <div id="auto_l_goals_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="shots">Low Goals</label>
+						<div class="col-sm-10">
+							<input class="form-control" type="number" min="0" max="9" id="auto_l_goals">
+						</div>
+					</div>
+				</div>
+			</div>
+            <center>
+                <button type="submit" class="btn btn-success" id="submit">Submit</button>
+            </center>
 		</form>
 	</div>
 
@@ -105,6 +180,7 @@
 	<script src="components/flat-ui/docs/assets/js/application.js"></script>
 
 	<script src="scouting/form-manager.js"></script>
+    <script src="components/main.js"></script>
 </body>
 
 </html>

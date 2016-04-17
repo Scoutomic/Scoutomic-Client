@@ -7,7 +7,9 @@
 
 	<link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="components/flat-ui/dist/css/flat-ui.min.css" rel="stylesheet" type="text/css">
+
 	<link href="components/main.css" rel="stylesheet" type="text/css">
+    <link href="components/app.css" rel="stylesheet" type="text/css">
 
 	<script src="helpers/context_menu.js"></script>
 	<script src="helpers/external_links.js"></script>
@@ -16,28 +18,38 @@
 </head>
 
 <body>
-	<div class="headline">
-		<h1 class="title">
-            <div class="logo"></div>
-            Scoutomic
-            <small>SERT's Scouting Application</small>
-        </h1>
-	</div>
-	<div class="container">
-		<div class="column-left">
-			<a href="scouting.html">
-				<button class="btn btn-info">Start Scouting</button>
-			</a>
-		</div>
-		<div class="column-center">
-			<a href="stats.html">
-				<button class="btn btn-info">View Statistics</button>
-			</a>
-		</div>
-		<div class="column-right">
-			<button class="btn btn-info">Contribute</button>
-		</div>
-	</div>
+    <div id="title-bar">
+        <div id="title">Scoutomic</div>
+        <div id="title-bar-btns">
+            <button id="min-btn">-</button>
+            <button id="max-btn">+</button>
+            <button id="close-btn">x</button>
+        </div>
+    </div>
+    <div id="content">
+    	<div class="headline">
+    		<h1 class="title">
+                <div class="logo"></div>
+                Scoutomic
+                <small>SERT's Scouting Application</small>
+            </h1>
+    	</div>
+    	<div class="container">
+    		<div class="column-left">
+    			<a href="scouting.html">
+    				<button class="btn btn-info">Start Scouting</button>
+    			</a>
+    		</div>
+    		<div class="column-center">
+    			<a href="stats.html">
+    				<button class="btn btn-info">View Statistics</button>
+    			</a>
+    		</div>
+    		<div class="column-right">
+    			<button class="btn btn-info">Contribute</button>
+    		</div>
+    	</div>
+    </div>
 
 	<script>
 		window.$ = window.jQuery = require('jquery');
@@ -46,6 +58,8 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="components/flat-ui/dist/js/flat-ui.min.js"></script>
 	<script src="components/flat-ui/docs/assets/js/application.js"></script>
+
+    <script src="components/main.js"></script>
 </body>
 
 </html>
