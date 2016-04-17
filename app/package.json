@@ -2,7 +2,7 @@
   "name": "scoutomic",
   "productName": "Scoutomic",
   "description": "An FRC scouting app to make scouting easier and more organized.",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "author": "Andrew Dassonville",
   "license": "MIT",
   "main": "background.js",
