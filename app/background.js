@@ -25,6 +25,7 @@ app.on('ready', function () {
 		width: 750,
 		height: 600,
 		show: false,
+		backgroundColor: '#2D2D30',
 		titleBarStyle: yosemite ? 'hidden-inset' : undefined,
 		frame: yosemite ? true : false
 	});
