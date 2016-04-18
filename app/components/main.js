@@ -32,5 +32,5 @@
 		if (document.readyState == "complete" && !yosemite) {
 			init();
 		}
-	};
+	}
 })();

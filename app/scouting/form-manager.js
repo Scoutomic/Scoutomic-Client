@@ -33,7 +33,7 @@ function submitScout() {
 			teleopHGoals: $("#teleop_h_goals").val(),
 			teleopLGoals: $("#teleop_l_goals").val()
 		}
-	}
+	};
 
 	console.log("data", data);
 
@@ -67,4 +67,4 @@ setInterval(function() {
 			});
 		});
 	});
-}, 5000)
+}, 5000);

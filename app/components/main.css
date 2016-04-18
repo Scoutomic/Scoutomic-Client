@@ -53,10 +53,3 @@
 	display: inline-block;
 	width: 33%;
 }
-
-@media only screen and -webkit-min-device-pixel-ratio 2,only screen and -webkit-min-device-pixel-ratio 15,only screen and -moz-min-device-pixel-ratio 2,only screen and -o-min-device-pixel-ratio 32,only screen and -o-min-device-pixel-ratio 21,only screen and min--moz-device-pixel-ratio 15,only screen and min-device-pixel-ratio 15,only screen and min-device-pixel-ratio 2 {
-	.logo
-	{
-		background-image: url(../img/demo/diamond.png);
-	}
-}
