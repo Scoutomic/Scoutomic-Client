@@ -1,6 +1,19 @@
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
 var Datastore = require('nedb');
+var jetpack = _interopDefault(require('fs-jetpack'));
 
 var localdb = new Datastore({ filename: __dirname + '/datastore/local.db', autoload: true });
+
+var app$1;
+if (process.type === 'renderer') {
+	app$1 = require('electron').remote.app;
+} else {
+	app$1 = require('electron').app;
+}
+var appDir = jetpack.cwd(app$1.getAppPath());
+var manifest = appDir.read('package.json', 'json');
+var env = manifest.env;
 
 function submitScout() {
 	var data = {
@@ -32,3 +45,26 @@ function submitScout() {
 		}
 	});
 }
+
+setInterval(function() {
+	var url = env.url ? env.url : "http://127.0.0.1";
+
+	localdb.find({}, function(err, docs) {
+		docs.forEach(function(doc) {
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: doc,
+				success: function() {
+					console.log("successful request to", url);
+
+					localdb.remove({ _id: doc._id }, {}, function(err) {
+						if (err) {
+							console.log(err);
+						}
+					});
+				}
+			});
+		});
+	});
+}, 5000)
