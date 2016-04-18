@@ -20,11 +20,11 @@ var barChartData = {
             data : [78*.66,145*.05,45*.1,112*.45,190*.5,124*.35,188*.65]
         }
     ]
-}
+};
 
-window.onload = function(){
+window.onload = function() {
     var ctx = document.getElementById("stats-canvas").getContext("2d");
     window.myBar = new Chart(ctx).Bar(barChartData, {
         responsive : true
     });
-}
+};

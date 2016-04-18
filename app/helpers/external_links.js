@@ -38,7 +38,7 @@
         };
 
         checkDomElement(e.target);
-    }
+    };
 
     document.addEventListener('click', supportExternalLinks, false);
 }());

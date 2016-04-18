@@ -28,4 +28,4 @@ var setDevMenu = function () {
 
 export default {
     setDevMenu: setDevMenu,
-}
+};
