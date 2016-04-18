@@ -1,6 +1,6 @@
 var Datastore = require('nedb');
 
-var teamdb = new Datastore({ filename: __dirname + '/datastore/teams.db', autoload: true });
+//var teamdb = new Datastore({ filename: __dirname + '/datastore/teams.db', autoload: true });
 
 var barChartData = {
     labels : ["369","1425","2521","2522","3131","3672","5085"],

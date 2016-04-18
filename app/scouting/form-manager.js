@@ -1,5 +1,3 @@
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
 var Datastore = require('nedb');
 var jetpack = _interopDefault(require('fs-jetpack'));
 
@@ -68,3 +66,7 @@ setInterval(function() {
 		});
 	});
 }, 5000);
+
+function _interopDefault (ex) {
+	return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex;
+}

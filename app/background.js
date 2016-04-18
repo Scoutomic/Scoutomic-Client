@@ -21,7 +21,7 @@ app.on('ready', function () {
 		yosemite = true;
 	}
 
-	var mainWindow = createWindow('main', {
+	mainWindow = createWindow('main', {
 		width: 750,
 		height: 600,
 		show: false,
