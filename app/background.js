@@ -24,11 +24,16 @@ app.on('ready', function () {
 	var mainWindow = createWindow('main', {
 		width: 750,
 		height: 600,
-		titleBarStyle: yosemite ? 'hidden' : undefined,
+		show: false,
+		titleBarStyle: yosemite ? 'hidden-inset' : undefined,
 		frame: yosemite ? true : false
 	});
 
 	mainWindow.loadURL('file://' + __dirname + '/main.html');
+
+	mainWindow.webContents.on('did-finish-load', function() {
+		mainWindow.show();
+	});
 
 	if (env.name !== 'production') {
 		devHelper.setDevMenu();
