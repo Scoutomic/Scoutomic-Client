@@ -1,5 +1,7 @@
 # Scoutomic-Client
 
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/9a246afa308c49edaa29848054185f60)](https://www.codacy.com/app/dassonville-andrew/Scoutomic-Client)
+
 A client interface for FRC match scouting.
 
 ![Screenshot/Mainpage](/screenshots/mainpage.png?raw=true)
