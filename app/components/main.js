@@ -20,7 +20,7 @@
 			var window = BrowserWindow.getFocusedWindow();
 			window.close();
 		});
-	};
+	}
 
 	document.onreadystatechange = function () {
 		var yosemite = false;
