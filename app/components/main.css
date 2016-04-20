@@ -1,6 +1,12 @@
+@font-face {
+	font-family: gothamRoundedLight;
+	src: url(gotham-rounded-light.otf);
+}
+
 .title
 {
-	font: 900 70px/80px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*font: 900 70px/80px "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font: 900 70px/80px gothamRoundedLight, Helvetica, Arial, sans-serif;
 	letter-spacing: 2px;
 	margin: 10px 0;
 }
