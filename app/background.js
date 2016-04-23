@@ -22,8 +22,11 @@ app.on('ready', function () {
 	}
 
 	mainWindow = createWindow('main', {
-		width: 750,
+		width: 850,
 		height: 600,
+		minWidth: 750,
+		minHeight: 600,
+		fullscreen: false,
 		show: false,
 		backgroundColor: '#2D2D30',
 		titleBarStyle: yosemite ? 'hidden-inset' : undefined,
