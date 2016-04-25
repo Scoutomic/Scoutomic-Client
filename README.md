@@ -1,8 +1,7 @@
 # Scoutomic-Client
 
-[![Join the chat at https://gitter.im/Scoutomic/Scoutomic-Client](https://badges.gitter.im/Scoutomic/Scoutomic-Client.svg)](https://gitter.im/Scoutomic/Scoutomic-Client?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/9a246afa308c49edaa29848054185f60)](https://www.codacy.com/app/dassonville-andrew/Scoutomic-Client)
+[![Join the chat at https://gitter.im/Scoutomic/Scoutomic-Client](https://badges.gitter.im/Scoutomic/Scoutomic-Client.svg)](https://gitter.im/Scoutomic/Scoutomic-Client?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A client interface for FRC match scouting.
 
