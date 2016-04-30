@@ -27,13 +27,13 @@ function submitScout() {
 				alliance: $("#team_alliance").val(),
 			},
 			autonomous: {
-				defenses: $("#auto_defense").val(),
+				defenses: $("#auto_defense").val() ? $("#auto_defense").val() : [],
 				speed: $("#auto_speed").val(),
 				highGoals: $("#auto_h_goals").val(),
 				lowGoals: $("#auto_l_goals").val()
 			},
 			teleoperated: {
-				defenses: $("#teleop_defense").val(),
+				defenses: $("#teleop_defense").val() ? $("#teleop_defense").val() : [],
 				speed: $("#teleop_speed").val(),
 				highGoals: $("#teleop_h_goals").val(),
 				lowGoals: $("#teleop_l_goals").val()
