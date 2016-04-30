@@ -14,10 +14,11 @@ var manifest = appDir.read('package.json', 'json');
 var env = manifest.env;
 
 function submitScout() {
+	var d = new Date();
 	var data = {
-		time: Math.floor(Date.now() / 1000),
-		year: 2016,
-		event: "orfoo",
+		time: Math.floor(d.getTime() / 1000),
+		year: d.getFullYear(),
+		event: "cmp",
 		fields: {
 			stage: $("#stage").val(),
 			match: $("#match_num").val(),
