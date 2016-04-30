@@ -36,6 +36,14 @@ function submitScout() {
 				speed: $("#teleop_speed").val(),
 				highGoals: $("#teleop_h_goals").val(),
 				lowGoals: $("#teleop_l_goals").val()
+			},
+			endGame: {
+				challenged: $("#end_challenge").val() == "1" ? true : false,
+				scale: $("#end_scale").val() == "1" ? true : false
+			},
+			final: {
+				allianceScore: $("#alliance_points").val(),
+				contribution: $("#alliance_contribution").val() / 100
 			}
 		}
 	};

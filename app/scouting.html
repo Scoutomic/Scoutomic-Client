@@ -166,6 +166,48 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h4>End-Game</h4>
+					<div id="end_challenge_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="end_challenge">Challenged Tower</label>
+						<div class="col-sm-10">
+							<select data-toggle="select" class="form-control select select-default" id="end_challenge">
+								<option selected disabled>Choose a Value</option>
+								<option value="0">No</option>
+								<option value="1">Yes</option>
+							</select>
+						</div>
+					</div>
+					<div id="end_scale_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="end_scale">Scaled Tower</label>
+						<div class="col-sm-10">
+							<select data-toggle="select" class="form-control select select-default" id="end_scale">
+								<option selected disabled>Choose a Value</option>
+								<option value="0">No</option>
+								<option value="1">Yes</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h4>Final</h4>
+					<div id="alliance_points_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="alliance_points">Scouted Alliance Points</label>
+						<div class="col-sm-10">
+							<input class="form-control" type="number" min="0" id="alliance_points">
+						</div>
+					</div>
+					<div id="alliance_contribution_container" class="form-group scout-container">
+						<label class="col-sm-2 control-label" for="alliance_contribution">Percentage of Work Done For Alliance</label>
+						<div class="col-sm-10">
+							<input class="form-control" type="number" min="0" max="100" id="alliance_contribution">
+						</div>
+					</div>
+				</div>
+			</div>
 			<center>
 				<button type="submit" class="btn btn-success" onclick="submitScout()" id="submit">Submit</button>
 			</center>
