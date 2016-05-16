@@ -3198,7 +3198,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .select2-drop {
   z-index: 1000;
   background-color: #f3f4f5;
-  min-width: 220px;
+  min-width: 175px;
   border: none;
   margin-top: 9px;
   padding: 0;
@@ -3340,7 +3340,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  min-width: 220px;
+  min-width: 175px;
   width: auto;
 }
 .form-group .select {
@@ -3637,7 +3637,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  min-width: 220px;
+  min-width: 175px;
   background-color: #ffffff;
   border-radius: 6px;
   text-align: left;
@@ -3804,7 +3804,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   background-color: #415b76;
 }
 .select2-drop {
-  min-width: 220px;
+  min-width: 175px;
   margin-top: 9px;
   visibility: visible;
   opacity: 1;
@@ -5933,7 +5933,7 @@ footer p {
 .footer-brand {
   display: block;
   margin-bottom: 26px;
-  width: 220px;
+  width: 175px;
 }
 .footer-brand img {
   width: 216px;
