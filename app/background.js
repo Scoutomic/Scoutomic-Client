@@ -24,8 +24,8 @@ app.on('ready', function () {
 	mainWindow = createWindow('main', {
 		width: 850,
 		height: 600,
-		minWidth: 750,
-		minHeight: 600,
+		minWidth: 775,
+		minHeight: 500,
 		fullscreen: false,
 		show: false,
 		backgroundColor: '#2D2D30',
