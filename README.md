@@ -7,22 +7,17 @@ A client interface for FRC match scouting.
 
 ![Screenshot/Mainpage](/screenshots/mainpage.png?raw=true)
 
-# Download/Install
+# Using
 
-The latest stable and dev releases can be found [here](https://github.com/Scoutomic/Scoutomic-Client/releases).
+You can [download the latest release](https://github.com/Scoutomic/Scoutomic-Client/releases) for your operating system or build it yourself (see below).
 
-# Building From Source
+# Building
 
-To build Scoutomic-Client from the source code, follow these instructions:
+To build Scoutomic-Client from the source code, you'll need to have [Node.js](https://nodejs.org/) installed.
 
-### 1: Download the Source
-
-You can do this in two ways, either clone/download this repository, or download the latest release from the [releases page](https://github.com/Scoutomic/Scoutomic-Client/releases).
-
-### 2: Install Required Modules
-
-To easily install the required modules, open Terminal or Command Prompt and enter `npm run setup` from the directory you downloaded in step 1.
-
-### 3: Run the Code
-
-Now you can easily start the code using `npm start`. You should be shown GULP's progress at building the application, then a window should appear when finished.
+```bash
+$ git clone https://github.com/Scoutomic/Scoutomic-Client
+$ cd Scoutomic-Client
+$ npm run setup
+$ npm start
+```
