@@ -24,9 +24,9 @@ $ npm start
 
 # Major TODO List
 
-[] Use the newest version of Electron (#18)
-[] Create Node.js v6.*.* version
-[] Add random form id to requests (#16)
-[] Add ability to customize URL to send data to (#13)
-[] Create stats graphs (#12)
-[] Ask for event when starting application (#11)
+* [ ] Use the newest version of Electron (#18)
+* [ ] Create Node.js v6.*.* version
+* [ ] Add random form id to requests (#16)
+* [ ] Add ability to customize URL to send data to (#13)
+* [ ] Create stats graphs (#12)
+* [ ] Ask for event when starting application (#11)
