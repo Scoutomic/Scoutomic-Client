@@ -13,7 +13,7 @@ You can [download the latest release](https://github.com/Scoutomic/Scoutomic-Cli
 
 # Building
 
-To build Scoutomic-Client from the source code, you'll need to have [Node.js](https://nodejs.org/) installed.
+To build Scoutomic-Client from the source code, you'll need to have the LTS version of [Node.js](https://nodejs.org/) installed (currently at v4.4.4).
 
 ```bash
 $ git clone https://github.com/Scoutomic/Scoutomic-Client
