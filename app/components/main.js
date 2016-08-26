@@ -1,12 +1,13 @@
 (function () {
 	var electron = require('electron');
 	var os = require('os');
-	
+
 	var remote = electron.remote;
 	var BrowserWindow = electron.BrowserWindow;
 
 	function init() {
-		$("#title-bar").show();
+		$("#title-bar-btns").show();
+		$("#title").show();
 
 		document.getElementById("min-btn").addEventListener("click", function (e) {
 			var window = BrowserWindow.getFocusedWindow();
