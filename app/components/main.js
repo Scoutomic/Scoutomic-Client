@@ -5,35 +5,30 @@
 	var remote = electron.remote;
 	var BrowserWindow = electron.BrowserWindow;
 
-	function init() {
+	function initTitleBar() {
 		$("#title-bar-btns").show();
 		$("#title").show();
 
-		document.getElementById("min-btn").addEventListener("click", function (e) {
-			var window = BrowserWindow.getFocusedWindow();
+		$("#min-btn").click(function() {
+			var window = remote.getCurrentWindow();
 			window.minimize();
 		});
 
-		document.getElementById("max-btn").addEventListener("click", function (e) {
-			var window = BrowserWindow.getFocusedWindow();
+		$("#max-btn").click(function() {
+			var window = remote.getCurrentWindow();
 			window.maximize();
 		});
 
-		document.getElementById("close-btn").addEventListener("click", function (e) {
-			var window = BrowserWindow.getFocusedWindow();
+		$("#close-btn").click(function() {
+			var window = remote.getCurrentWindow();
 			window.close();
 		});
 	}
 
-	document.onreadystatechange = function () {
-		var yosemite = false;
 
-		if (os.platform() === 'darwin' && os.release().split('.')[0] >= 10) {
-			yosemite = true;
+	$(document).ready(function() {
+		if (!(os.platform() === 'darwin' && os.release().split('.')[0] >= 10)) {
+			initTitleBar();
 		}
-
-		if (document.readyState == "complete" && !yosemite) {
-			init();
-		}
-	};
+	});
 })();
