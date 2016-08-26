@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Scoutomic</title>
+
+	<link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../node_modules/designmodo-flat-ui/dist/css/flat-ui.min.css" rel="stylesheet" type="text/css">
+
+	<link href="../assets/css/app.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/stats.css" rel="stylesheet" type="text/css">
+
+	<script src="../helpers/context_menu.js"></script>
+	<script src="../helpers/external_links.js"></script>
+
+	<script src="../app.js"></script>
+</head>
+
+<body>
+	<div id="title-bar">
+		<div id="title">Scoutomic</div>
+		<div id="title-bar-btns">
+			<a href="main.html">
+				<button id="home-btn">&#8962;</button>
+			</a>
+			<button id="min-btn">-</button>
+			<button id="max-btn">+</button>
+			<button id="close-btn">x</button>
+		</div>
+	</div>
+	<div id="content">
+		<div id="container">
+			<canvas id="stats-canvas" height="450" width="600"></canvas>
+		</div>
+	</div>
+
+	<script>
+		window.$ = window.jQuery = require('jquery');
+	</script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../node_modules/designmodo-flat-ui/dist/js/flat-ui.min.js"></script>
+	<script src="../node_modules/chart.js/src/chart.js"></script>
+
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/stats.js"></script>
+</body>
+
+</html>

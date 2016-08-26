@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Scoutomic</title>
+
+	<link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../node_modules/designmodo-flat-ui/dist/css/flat-ui.min.css" rel="stylesheet" type="text/css">
+
+	<link href="../assets/css/app.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+
+	<script src="../helpers/context_menu.js"></script>
+	<script src="../helpers/external_links.js"></script>
+
+	<script src="../app.js"></script>
+</head>
+
+<body>
+	<div id="title-bar">
+		<div id="title">Scoutomic</div>
+		<div id="title-bar-btns">
+			<button id="min-btn">-</button>
+			<button id="max-btn">+</button>
+			<button id="close-btn">x</button>
+		</div>
+	</div>
+	<div id="content">
+		<div class="headline">
+			<h1 class="title">
+				<div class="logo"></div>
+				SCOUTOMIC
+				<small>SERT's Scouting Application</small>
+			</h1>
+		</div>
+		<div class="container">
+			<div class="column-left">
+				<a href="scouting.html">
+					<button class="btn btn-info">Start Scouting</button>
+				</a>
+			</div>
+			<div class="column-center">
+				<a href="stats.html">
+					<button class="btn btn-info">View Statistics</button>
+				</a>
+			</div>
+			<div class="column-right">
+				<a href="javascript:require('shell').openExternal('http://www.github.com/Scoutomic/Scoutomic-Client')">
+					<button class="btn btn-info">Contribute</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		window.$ = window.jQuery = require('jquery');
+	</script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../node_modules/designmodo-flat-ui/dist/js/flat-ui.min.js"></script>
+
+	<script src="../assets/js/main.js"></script>
+</body>
+
+</html>

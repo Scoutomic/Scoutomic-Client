@@ -1,7 +1,7 @@
 // This is main process of Electron, started as first thing when your
 // app starts. This script is running through entire life of your application.
 // It doesn't have any windows which you can see on screen, but we can open
-// window from here.
+// windows from here.
 
 import { app } from 'electron';
 import os from 'os';
@@ -33,7 +33,7 @@ app.on('ready', function () {
 		frame: yosemite ? true : false
 	});
 
-	mainWindow.loadURL('file://' + __dirname + '/main.html');
+	mainWindow.loadURL('file://' + __dirname + '/pages/main.html');
 
 	mainWindow.webContents.on('did-finish-load', function() {
 		mainWindow.show();
