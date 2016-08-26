@@ -1,7 +1,9 @@
 (function () {
-	var remote = require('remote');
+	var electron = require('electron');
 	var os = require('os');
-	var BrowserWindow = remote.require('browser-window');
+	
+	var remote = electron.remote;
+	var BrowserWindow = electron.BrowserWindow;
 
 	function init() {
 		$("#title-bar").show();
