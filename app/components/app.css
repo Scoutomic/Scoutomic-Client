@@ -39,7 +39,7 @@ body
 
 #title
 {
-	visibiliy: hidden;
+	visibility: hidden;
 	position: fixed;
 	top: 0;
 	left: 12px;
@@ -50,7 +50,7 @@ body
 #title-bar-btns
 {
 	-webkit-app-region: no-drag;
-	visibiliy: hidden;
+	visibility: hidden;
 	position: fixed;
 	top: 1px;
 	right: 0;
