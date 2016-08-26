@@ -18,7 +18,7 @@ To build Scoutomic-Client from the source code, you'll need to have the LTS vers
 ```bash
 $ git clone https://github.com/Scoutomic/Scoutomic-Client
 $ cd Scoutomic-Client
-$ npm run setup
+$ npm install
 $ npm start
 ```
 
