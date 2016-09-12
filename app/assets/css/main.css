@@ -1,6 +1,6 @@
 .title
 {
-	font: 900 70px/80px gothamRoundedLight, Helvetica, Arial, sans-serif;
+	font: 900 70px/80px robotoThin, Helvetica, Arial, sans-serif;
 	letter-spacing: 2px;
 	margin: 10px 0;
 }
@@ -13,7 +13,8 @@
 
 .title .logo
 {
-	background: url(../img/logo.png) center 0 no-repeat;
+	background: url(../img/logo_light.svg) center 0 no-repeat;
+	background-size: 181px 181px;
 	height: 181px;
 	overflow: hidden;
 	text-indent: -9999em;
